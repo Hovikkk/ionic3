@@ -1,0 +1,42 @@
+page-login {
+    #loginHeader {
+        button {
+            color: #488aff;
+        }
+        div {
+            background-color: #13274a;
+            overflow: inherit;
+            color: #488aff;   
+        }
+    }
+    #loginContent {
+        background-image: url('../assets/imgs/loginRegBg.png');
+        background-size: 100% 100%;
+        ion-list {
+            margin-top: 10vh;
+            ion-item {
+                border-radius: 40px;
+                background: #2d2d5d;
+                margin-bottom: 5vw;
+                border: none;
+                .item-inner {
+                    border: none;
+                }
+                .ionLabel {
+                    width: 80%;
+                    margin: 0 auto;
+                    color: #a4c2f7
+                }
+                ion-input {
+                    width: 80%;
+                    color: white
+                }
+            }
+        }
+        .buttonSignIn {
+            width: 50vw;
+            margin: 0 auto;
+            border-radius: 50px;
+        }
+    }
+}

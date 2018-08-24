@@ -1,0 +1,31 @@
+page-home {
+    #homeHeader div {
+        background-color: #13274a;
+        overflow: inherit;
+        text-align: center;
+        color: #488aff; 
+    }
+    .homeContent {
+        background-image: url('../assets/imgs/bg.png');
+        background-size: 100% 100%;
+        #logo {
+            background-image: url('../assets/imgs/logoApp.png');
+            background-size: 100% 100%;
+            width: 30vw;
+            height: 30vw;
+            margin: 10vw auto;
+        }
+        #topButtons {
+            width: 100%;
+            margin-top: 20%;
+            align-items: center;
+            justify-content: center;
+            .registerButton {
+                display: block;
+                margin: 15px auto;
+            }
+        }
+    }
+    
+    
+}

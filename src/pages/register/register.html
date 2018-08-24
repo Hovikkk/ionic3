@@ -1,0 +1,74 @@
+﻿<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar id="registerHeader">
+    <ion-title>Create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="registerContent">
+  <form [formGroup]="formgroup">
+    <ion-list>
+      <ion-item>
+        <ion-label class="ionLabel" floating>Username</ion-label>
+        <ion-input type="text" formControlName="usernameForm" #username></ion-input>
+      </ion-item>
+      <ion-item *ngIf="usernameForm.hasError('required') && usernameForm.touched">
+        <p class="errorText"> *UserName is required</p>
+      </ion-item>
+      <ion-item *ngIf="usernameForm.hasError('maxlength') && usernameForm.touched">
+          <p class="errorText">Sorry, maximum Username length is 10!</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="ionLabel" floating>FirstName</ion-label>
+        <ion-input type="text" formControlName="firstname" #first></ion-input>
+      </ion-item>
+      <ion-item *ngIf="firstname.hasError('required') && firstname.touched">
+        <p class="errorText"> *FirstName is required</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="ionLabel" floating>LastName</ion-label>
+        <ion-input type="text" formControlName="lastname" #last></ion-input>
+      </ion-item>
+      <ion-item *ngIf="lastname.hasError('required') && lastname.touched">
+        <p class="errorText"> *LastName is required</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="ionLabel" floating>Email</ion-label>
+        <ion-input type="email" formControlName="emailForm" #email></ion-input>
+      </ion-item>
+      <ion-item *ngIf="emailForm.hasError('required') && emailForm.touched">
+        <p class="errorText"> *Email is required</p>
+      </ion-item>
+      <ion-item *ngIf="emailForm.hasError('pattern') && emailForm.touched">
+        <p class="errorText"> *Fill real email</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="ionLabel" floating>Password</ion-label>
+        <ion-input type="password" formControlName="passForm" #password></ion-input>
+      </ion-item>
+      <ion-item *ngIf="passForm.hasError('required') && passForm.touched">
+        <p class="errorText"> *Password is required</p>
+      </ion-item>
+      <ion-item *ngIf="passForm.hasError('minlength') && passForm.touched">
+        <p class="errorText">Sorry, minimum password length is 6!</p>
+      </ion-item>
+
+          
+    </ion-list>
+    <div padding>
+      <button class="buttonRegister" block ion-button (click)="registerUser()" item-left>Register</button>
+    </div>
+  </form>
+</ion-content>

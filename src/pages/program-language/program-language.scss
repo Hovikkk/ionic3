@@ -1,0 +1,66 @@
+page-program-language {
+    #languageHeader {
+        div {
+            background-color: #c4aade;
+            overflow: inherit;
+            color: white;
+        }
+        button {
+            color: white;
+        }
+    }
+    .asd {
+        margin-top:50px
+    }
+    #programLanguageLogo { 
+        background: #dcbaff;
+        div {
+            width: 50vw;
+            height: 50vw;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+    .html {
+        background-image: url('../assets/imgs/html.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .css {
+        background-image: url('../assets/imgs/css.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .css3 {
+        background-image: url('../assets/imgs/css3.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .angularJs {
+        background-image: url('../assets/imgs/angularJs.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .ionic {
+        background-image: url('../assets/imgs/ionic.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .php {
+        background-image: url('../assets/imgs/php.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+    .laravel {
+        background-image: url('../assets/imgs/laravel.png');
+        background-size: 100% 100%;
+        position: fixed;
+        top: 30%;
+    }
+}
